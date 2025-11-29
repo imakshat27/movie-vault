@@ -2,22 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { MovieCard } from './components/MovieCard.jsx'
+import Home from './pages/Home.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <>
-      <Text text='hello'></Text>
-      <Text text='world'></Text>
+      <Home></Home>
+      
     </>
     
-  )
-}
-
-function Text({text}) {
-  return (
-    <p>{text}</p>
   )
 }
 
