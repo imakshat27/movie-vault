@@ -1,0 +1,22 @@
+/* Aurora.css - full-screen background aurora */
+.aurora-container {
+  position: fixed;
+  inset: 0;                /* top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;    /* so UI remains clickable */
+  z-index: -1;             /* behind page content */
+  overflow: hidden;
+  background: transparent;
+}
+
+/* ensure canvas fills container and uses device pixels */
+.aurora-container canvas {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform: translateZ(0); /* helps some GPUs */
+}
