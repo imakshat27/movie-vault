@@ -7,12 +7,12 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand {
+.nav-brand {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.navbar-links {
+.nav-links {
   display: flex;
   gap: 2rem;
 }
@@ -33,11 +33,11 @@
     padding: 1rem;
   }
 
-  .navbar-brand {
+  .nav-brand {
     font-size: 1.2rem;
   }
 
-  .navbar-links {
+  .nav-links {
     gap: 1rem;
   }
 
