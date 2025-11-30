@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import Favourite from './pages/Favourites'
 import Aurora from './components/Background.jsx'
 import NavBar from './components/NavBar.jsx'
+import { MovieProvider } from './contexts/MovieContext.jsx'
 
 
 
@@ -17,7 +18,7 @@ function App() {
   
 
   return (
-    <>
+    <MovieProvider>
     <NavBar />
     <Aurora
         colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
@@ -32,7 +33,7 @@ function App() {
         <Route path='/favourites' element={<Favourite/>}/>
       </Routes>
     </main>    
-    </>
+    </MovieProvider>
     
   )
 }
