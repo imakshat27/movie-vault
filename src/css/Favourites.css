@@ -12,6 +12,13 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.favourites-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Adds space between movie cards */
+}
+
 .favourites-empty {
   text-align: center;
   padding: 4rem 2rem;
